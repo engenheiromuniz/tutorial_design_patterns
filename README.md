@@ -5,6 +5,7 @@
 ![Estruturais](https://img.shields.io/badge/Estruturais-Organizar_classes-d97706?style=for-the-badge)
 ![Comportamentais](https://img.shields.io/badge/Comportamentais-Comunicar_objetos-7c3aed?style=for-the-badge)
 
+
 > **Padrões de projeto** (*design patterns*) são soluções já pensadas e exaustivamente validadas por desenvolvedores de software para problemas que se repetem no design de sistemas.
 
 ---
@@ -14,35 +15,47 @@
 Existem **3 categorias** básicas de padrões de projeto:
 
 ```mermaid
-graph TD
-    P([🧩 Padrões de Projeto])
-    P --> C1[🏭 Criacionais]
-    P --> C2[🧱 Estruturais]
-    P --> C3[💬 Comportamentais]
+flowchart TD
+    P["Padrões de Projeto"]
+    P --> C1["Criacionais"]
+    P --> C2["Estruturais"]
+    P --> C3["Comportamentais"]
 
-    C1 --> A1[Singleton]
-    C1 --> A2[Factory Method]
-    C1 --> A3[Abstract Factory]
-    C1 --> A4[Builder]
-    C1 --> A5[Prototype]
+    C1 --> A1["Singleton"]
+    C1 --> A2["Factory Method"]
+    C1 --> A3["Abstract Factory"]
+    C1 --> A4["Builder"]
+    C1 --> A5["Prototype"]
 
-    C2 --> B1[Adapter]
-    C2 --> B2[Facade]
-    C2 --> B3[Decorator]
-    C2 --> B4[Proxy]
-    C2 --> B5[Bridge]
-    C2 --> B6[Composite]
+    C2 --> B1["Adapter"]
+    C2 --> B2["Facade"]
+    C2 --> B3["Decorator"]
+    C2 --> B4["Proxy"]
+    C2 --> B5["Bridge"]
+    C2 --> B6["Composite"]
 
-    C3 --> D1[Observer]
-    C3 --> D2[Strategy]
-    C3 --> D3[Chain of Responsibility]
+    C3 --> D1["Observer"]
+    C3 --> D2["Strategy"]
+    C3 --> D3["Chain of Responsibility"]
 
-    classDef cri fill:#d1fae5,stroke:#2e8b57,color:#000
-    classDef est fill:#fef3c7,stroke:#d97706,color:#000
-    classDef com fill:#ede9fe,stroke:#7c3aed,color:#000
-    class C1,A1,A2,A3,A4,A5 cri
-    class C2,B1,B2,B3,B4,B5,B6 est
-    class C3,D1,D2,D3 com
+    style P fill:#dbeafe,stroke:#2563eb,color:#000
+    style C1 fill:#2e8b57,stroke:#1f6b41,color:#fff
+    style C2 fill:#d97706,stroke:#a85b04,color:#fff
+    style C3 fill:#7c3aed,stroke:#5b21b6,color:#fff
+    style A1 fill:#d1fae5,stroke:#2e8b57,color:#000
+    style A2 fill:#d1fae5,stroke:#2e8b57,color:#000
+    style A3 fill:#d1fae5,stroke:#2e8b57,color:#000
+    style A4 fill:#d1fae5,stroke:#2e8b57,color:#000
+    style A5 fill:#d1fae5,stroke:#2e8b57,color:#000
+    style B1 fill:#fef3c7,stroke:#d97706,color:#000
+    style B2 fill:#fef3c7,stroke:#d97706,color:#000
+    style B3 fill:#fef3c7,stroke:#d97706,color:#000
+    style B4 fill:#fef3c7,stroke:#d97706,color:#000
+    style B5 fill:#fef3c7,stroke:#d97706,color:#000
+    style B6 fill:#fef3c7,stroke:#d97706,color:#000
+    style D1 fill:#ede9fe,stroke:#7c3aed,color:#000
+    style D2 fill:#ede9fe,stroke:#7c3aed,color:#000
+    style D3 fill:#ede9fe,stroke:#7c3aed,color:#000
 ```
 
 | Categoria | Ligada a... | Exemplos |
